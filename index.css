@@ -1,0 +1,124 @@
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2491a4, #4a0575);
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 20px 8px 8px;
+    border-radius: 10px;
+}
+
+.todo-app h2{
+    color: rgb(199, 77, 29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+#add-btn{
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.dlt-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 1px;
+}
+#delete-all{
+    
+    border: none;
+    outline: none;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 50px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px;
+    user-select: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+ul li .icon {
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+ul li.checked .icon {
+    background-image: url('icons/checked.png');
+    
+}
+
+ul li .icon {
+    background-image: url('icons/unchecked.png');
+}
+
+ul li.checked a {
+    text-decoration: line-through;
+    color: #555;
+}
+
+ul li a {
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+}
